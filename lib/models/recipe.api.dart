@@ -19,7 +19,7 @@ class RecipeApi {
     var uri = Uri.https(
       "yummly2.p.rapidapi.com", 
       '/feeds/list', 
-      {"limit": "24", "start": "0", "tag": "list.recipe.poopular"},
+      {"limit": "24", "start": "0", "tag": "list.recipe.popular"},
       );
 
       final response = await http.get(uri, headers: {
